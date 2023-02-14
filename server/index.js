@@ -2,7 +2,7 @@ import express from 'express';
 import * as dotenv from "dotenv";
 import cors from 'cors';
 
-import connectDB from './mongoDB/connect.js';
+import connectDB from './mongo/connect.js';
 import postRoutes from './routes/postRoutes.js';
 import dalleRoutes from './routes/dalleRoutes.js';
 
@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: "http://localhost:5173"
+    origin: "http://localhost"
 }));
 app.use(express.json({limit: "50mb"}));
 
