@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: "https://ai-image-app.netlify.app/"
+    origin: "https://ai-image-app.netlify.app"
 }));
 app.use(express.json({limit: "50mb"}));
 
@@ -20,7 +20,7 @@ app.use('/api/v1/dalle', dalleRoutes);
 
 app.get('/', async (req, res) => {
     res.status(200).json({
-        message: "Server Running : 5173..."
+        message: "Server Running"
     })
 })
 
