@@ -20,7 +20,7 @@ app.use('/api/v1/dalle', dalleRoutes);
 
 app.get('/', async (req, res) => {
     res.status(200).json({
-        message: "Server Running..."
+        message: "Server Running : 5173..."
     })
 })
 
